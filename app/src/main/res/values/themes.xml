@@ -13,4 +13,16 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="ButtonAuth" parent="@style/TextAppearance.AppCompat.Widget.Button.Colored">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:backgroundTint">@color/blue</item>
+        <item name="android:colorAccent">@color/soft_black</item>
+    </style>
+
+    <style name="ButtonAsText" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:colorAccent">@color/blue</item>
+    </style>
 </resources>

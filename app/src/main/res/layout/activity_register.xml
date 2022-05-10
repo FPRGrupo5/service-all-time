@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Register">
 
     <ScrollView
+        android:id="@+id/ScrollViewRegister"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/LinearLayoutLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center|top"
@@ -21,7 +21,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="40dp"
+                android:layout_marginBottom="10dp"
                 app:srcCompat="@drawable/logo" />
 
             <TextView
@@ -35,7 +35,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/Email_eTxt_L"
+                android:id="@+id/Name_eTxt_R"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -43,13 +43,41 @@
                 android:drawableStart="@drawable/ic_persona"
                 android:drawablePadding="5dp"
                 android:ems="10"
+
+                android:hint="@string/complete_name"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColorHint="#757575" />
+
+            <EditText
+                android:id="@+id/Email_eTxt_R"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:autofillHints=""
+                android:drawableStart="@drawable/ic_persona"
+                android:drawablePadding="5dp"
+                android:ems="10"
+
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 android:padding="15dp"
                 android:textColorHint="#757575" />
 
             <EditText
-                android:id="@+id/Password_eTxt_L"
+                android:id="@+id/Phone_eTxt_R"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:autofillHints=""
+                android:drawableStart="@drawable/ic_persona"
+                android:ems="10"
+                android:hint="@string/phone"
+                android:inputType="phone"
+                android:padding="15dp" />
+
+            <EditText
+                android:id="@+id/Password_eTxt_R"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -57,34 +85,29 @@
                 android:drawableStart="@drawable/ic_lock"
                 android:drawablePadding="5dp"
                 android:ems="10"
+
                 android:hint="@string/password"
                 android:inputType="textPassword"
-                android:padding="15dp"
-                android:textColorHint="#757575" />
+                android:padding="15dp" />
 
             <Button
-                android:id="@+id/ForgetPassword_Btn"
-                style="@style/ButtonAsText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/forget_password" />
-
-            <Button
-                android:id="@+id/Login_Btn_L"
+                android:id="@+id/Register_Btn_R"
                 style="@style/ButtonAuth"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
-                android:text="@string/login" />
+                android:text="@string/register" />
 
             <Button
-                android:id="@+id/Register_Btn_L"
+                android:id="@+id/Back2Login_Btn_R"
                 style="@style/ButtonAuth"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="@string/register" />
+                android:text="@string/login" />
+
+
         </LinearLayout>
     </ScrollView>
 

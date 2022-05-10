@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">Serviciostime</string>
+    <string name="app_name">Service all Time</string>
+
+    <string name="login">Iniciar Sesión</string>
+    <string name="register">Registrarse</string>
+    <string name="forget_password">¿Olvidó su contraseña?</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="complete_name">Nombre Completo</string>
+    <string name="phone">Teléfono</string>
+    <string name="email_sent">Correo enviado</string>
+    <string name="auth_failed">Autenticación fallida</string>
+    <string name="user_created">Usuario creado</string>
 </resources>
