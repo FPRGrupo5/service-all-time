@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/HomeFragment"
+        android:icon="@drawable/ic_homework"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/ServiceFragment"
+        android:icon="@drawable/ic_servicios"
+        android:title="Servicios" />
+    <item
+        android:id="@+id/PerfilFragment"
+        android:icon="@drawable/ic_perfil"
+        android:title="Perfil" />
+    <item
+        android:id="@+id/AddSerFragement"
+        android:icon="@drawable/ic_addservicios"
+        android:title="Add Service" />
+</menu>

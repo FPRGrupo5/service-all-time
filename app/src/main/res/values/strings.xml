@@ -11,4 +11,6 @@
     <string name="email_sent">Correo enviado</string>
     <string name="auth_failed">Autenticación fallida</string>
     <string name="user_created">Usuario creado</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
