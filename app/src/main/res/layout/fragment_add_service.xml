@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView_Register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Addservice">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/add_image_BT"
+            style="@style/ButtonAuth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/add_image" />
+
+        <!-- Service title -->
+
+        <EditText
+            android:id="@+id/service_title_ET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/service_title"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textColorHint="#757575" />
+
+        <EditText
+            android:id="@+id/service_description_ET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/service_description"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textColorHint="#757575" />
+
+        <EditText
+            android:id="@+id/service_categories_ET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/service_categories"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textColorHint="#757575" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/start_Time"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/service_schedule_start"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColorHint="#757575" />
+
+            <EditText
+                android:id="@+id/end_Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/service_schedule_end"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColorHint="#757575" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:padding="15dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location"
+                android:inputType="none" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:padding="15dp"
+            android:textColorHint="#757575" />
+
+        <Button
+            android:id="@+id/register_service_ET"
+            style="@style/ButtonAuth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="@string/create_service" />
+
+
+    </LinearLayout>
+</ScrollView>

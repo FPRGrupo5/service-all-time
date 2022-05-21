@@ -4,7 +4,7 @@
     <style name="ButtonAuth" parent="@style/TextAppearance.AppCompat.Widget.Button.Colored">
         <item name="android:textColor">@color/green</item>
         <item name="android:backgroundTint">@color/blue</item>
-        <item name="android:colorAccent">@color/soft_black</item>
+        <item name="android:colorAccent">@color/gray</item>
         <item name="android:buttonCornerRadius">10dp</item>
     </style>
 </resources>

@@ -8,21 +8,38 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ProgressBar;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class Splash extends AppCompatActivity {
     ProgressBar splashProgress;
+    FirebaseUser userAuthed;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        userAuthed = FirebaseAuth.getInstance().getCurrentUser();
+
+        initProgressBar();
+    }
+
+    private void initProgressBar() {
         splashProgress = findViewById(R.id.splashProgress);
         ObjectAnimator.ofInt(splashProgress, "progress", 100).setDuration(5000).start();
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(Splash.this, Login.class);
-                startActivity(intent);
-                finish();
-            }
+        new Handler().postDelayed(() -> {
+            goToXActivity();
+            finish();
         }, 5000);
+    }
+
+    private void goToXActivity() {
+        Intent intent;
+        if (userAuthed != null) {
+            intent = new Intent(Splash.this, HomeActivity.class);
+        } else {
+            intent = new Intent(Splash.this, Login.class);
+        }
+        startActivity(intent);
     }
 }

@@ -21,10 +21,10 @@ public class Register extends AppCompatActivity {
 
         Rauth = FirebaseAuth.getInstance();
 
-        Button registerBtn = findViewById(R.id.Register_Btn_R);
+        Button registerBtn = findViewById(R.id.btn_register_R);
         registerBtn.setOnClickListener(view -> onRegister());
 
-        Button loginBtn = findViewById(R.id.Back2Login_Btn_R);
+        Button loginBtn = findViewById(R.id.btn_backToLogin);
         loginBtn.setOnClickListener(view -> go2Login());
     }
 
@@ -34,8 +34,8 @@ public class Register extends AppCompatActivity {
     }
 
     private void onRegister() {
-        EditText emailETxt = findViewById(R.id.Email_eTxt_R);
-        EditText passwordETxt = findViewById(R.id.Password_eTxt_R);
+        EditText emailETxt = findViewById(R.id.eTxt_email_R);
+        EditText passwordETxt = findViewById(R.id.eTxt_password_R);
         String email = emailETxt.getText().toString();
         String password = passwordETxt.getText().toString();
 
@@ -46,7 +46,7 @@ public class Register extends AppCompatActivity {
                         sendCheckVerification(user);
                         go2Login();
                     } else {
-                        Snackbar.make(findViewById(R.id.ScrollViewRegister),
+                        Snackbar.make(findViewById(R.id.scrollView_Register),
                                 R.string.auth_failed, Snackbar.LENGTH_SHORT).show();
                     }
                 }
@@ -58,7 +58,7 @@ public class Register extends AppCompatActivity {
             user.sendEmailVerification().addOnCompleteListener(
                     this, task -> {
                         if (task.isSuccessful()) {
-                            Snackbar.make(findViewById(R.id.ScrollViewRegister),
+                            Snackbar.make(findViewById(R.id.scrollView_Register),
                                     R.string.user_created, Snackbar.LENGTH_SHORT).show();
                         }
                     });

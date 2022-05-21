@@ -16,11 +16,25 @@
         <entry key="..\:/Users/PC/AndroidStudioProjects/Serviciostime/app/src/main/res/layout/activity_main.xml" value="0.17" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/Serviciostime/app/src/main/res/layout/activity_registro.xml" value="0.21" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/Serviciostime/app/src/main/res/layout/activity_splash.xml" value="0.11322463768115942" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Service-allTime/app/src/main/res/drawable/bg_circle.xml" value="0.1" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/Service-allTime/app/src/main/res/drawable/gradient_normal.xml" value="0.154" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Service-allTime/app/src/main/res/drawable/ic_addservicios.xml" value="0.1" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Service-allTime/app/src/main/res/drawable/ic_close_icon.xml" value="0.1" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Service-allTime/app/src/main/res/drawable/ic_homework.xml" value="0.1" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Service-allTime/app/src/main/res/drawable/ic_lock.xml" value="0.1" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Service-allTime/app/src/main/res/drawable/ic_perfil.xml" value="0.1" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Service-allTime/app/src/main/res/drawable/ic_persona.xml" value="0.1" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Service-allTime/app/src/main/res/drawable/ic_servicios.xml" value="0.1" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/Service-allTime/app/src/main/res/drawable/rounded_corners.xml" value="0.154" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Service-allTime/app/src/main/res/layout/activity_full_screen_service.xml" value="0.264" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Service-allTime/app/src/main/res/layout/activity_home.xml" value="0.264" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/Service-allTime/app/src/main/res/layout/activity_login.xml" value="0.2151268115942029" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/Service-allTime/app/src/main/res/layout/activity_register.xml" value="0.2" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/Service-allTime/app/src/main/res/layout/activity_splash.xml" value="0.2151268115942029" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Service-allTime/app/src/main/res/layout/card_service.xml" value="0.4" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Service-allTime/app/src/main/res/layout/fragment_addservice.xml" value="0.264" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Service-allTime/app/src/main/res/layout/fragment_servicios.xml" value="0.4" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Service-allTime/app/src/main/res/menu/menunavegation.xml" value="0.1" />
       </map>
     </option>
   </component>

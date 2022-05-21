@@ -8,6 +8,10 @@ import android.view.MenuItem;
 import android.widget.Toolbar;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.service.myapplication.fragments.Addservice;
+import com.service.myapplication.fragments.Inicio;
+import com.service.myapplication.fragments.Perfil;
+import com.service.myapplication.fragments.Services;
 
 public class HomeActivity extends AppCompatActivity {
     private Toolbar toolbar1;
@@ -32,7 +36,7 @@ public class HomeActivity extends AppCompatActivity {
 
                         return true;
                     case R.id.ServiceFragment:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.frame1,new Servicios()).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.frame1,new Services()).commit();
 
                         return true;
                     case R.id.PerfilFragment:

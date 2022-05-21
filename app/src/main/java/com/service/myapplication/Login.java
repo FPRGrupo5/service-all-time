@@ -4,10 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
@@ -24,13 +22,13 @@ public class Login extends AppCompatActivity {
 
         Lauth = FirebaseAuth.getInstance();
 
-        Button registerBtn = findViewById(R.id.Register_Btn_L);
+        Button registerBtn = findViewById(R.id.btn_goToRegister);
         registerBtn.setOnClickListener(view -> go2Register());
         
-        Button loginBtn = findViewById(R.id.Login_Btn_L);
+        Button loginBtn = findViewById(R.id.btn_login_L);
         loginBtn.setOnClickListener(view -> onLogin());
 
-        Button forgetPasswordBtn = findViewById(R.id.ForgetPassword_Btn);
+        Button forgetPasswordBtn = findViewById(R.id.btn_forgetPassword_L);
         forgetPasswordBtn.setOnClickListener(view -> onForgetPassword());
     }
 
@@ -45,7 +43,7 @@ public class Login extends AppCompatActivity {
     }
 
     private void onForgetPassword() {
-        EditText emailETxt = findViewById(R.id.Email_eTxt_L);
+        EditText emailETxt = findViewById(R.id.eTxt_email_L);
         String email = emailETxt.getText().toString();
 
         Lauth.sendPasswordResetEmail(email).addOnCompleteListener(
@@ -64,8 +62,8 @@ public class Login extends AppCompatActivity {
     }
 
     private void onLogin() {
-        EditText passwordETxt = findViewById(R.id.Password_eTxt_L);
-        EditText emailETxt = findViewById(R.id.Email_eTxt_L);
+        EditText passwordETxt = findViewById(R.id.eTxt_password_L);
+        EditText emailETxt = findViewById(R.id.eTxt_email_L);
         String password = passwordETxt.getText().toString();
         String email = emailETxt.getText().toString();
 
@@ -75,7 +73,7 @@ public class Login extends AppCompatActivity {
                         FirebaseUser user = Lauth.getCurrentUser();
                         go2Home();
                     } else {
-                        Snackbar.make(findViewById(R.id.ScrollViewRegister),
+                        Snackbar.make(findViewById(R.id.scrollView_Register),
                                 R.string.auth_failed, Snackbar.LENGTH_SHORT).show();
                     }
                 });

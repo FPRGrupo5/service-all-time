@@ -15,12 +15,23 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     !-- resources => create service activity-->
-    <string name="service_title">Service Title</string>
-    <string name="service_description">Service Description</string>
-    <string name="service_categories">Service Categories</string>
-    <string name="service_schedule_start">Start Time</string>
-    <string name="service_schedule_theend">End Time</string>
-    <string name="register_service">Register Service</string>
-    <string name="create_service">Create service</string>
-    <string name="add_image">Add image</string>
+    <string name="service_title">Título</string>
+    <string name="service_description">Descripción</string>
+    <string name="service_categories">Categorías</string>
+    <string name="service_schedule_start">Inicio del tiempo</string>
+    <string name="service_schedule_end">Fin del tiempo</string>
+    <string name="register_service">Registrar Servico</string>
+    <string name="create_service">Crear servicio</string>
+    <string name="add_image">Agregar imagen</string>
+
+    <string name="des_img_avatar">Imagen de perfil del usuario</string>
+    <string name="username">Usuario</string>
+    <string name="des_img_service">Imagen de referencia del servicio</string>
+    <string name="service_rating">Valoración</string>
+    <string name="service_date_publish">Fecha de publicación</string>
+
+    <string name="title_fragment_inicio">Inicio</string>
+    <string name="title_fragment_services">Servicios</string>
+    <string name="title_fragment_profile">Perfil</string>
+    <string name="title_fragment_add_service">Agregar Servicio</string>
 </resources>
