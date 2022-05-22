@@ -6,8 +6,13 @@
         <entry key="..\:/ANDROID_STUDIO/Service-allTime/app/src/main/res/layout/fragment_addservice.xml" value="0.264" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/Service-allTime/app/src/main/res/drawable/ic_servicios.xml" value="0.1" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/Service-allTime/app/src/main/res/layout/activity_home.xml" value="0.12364130434782608" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Service-allTime/app/src/main/res/layout/activity_login.xml" value="0.12364130434782608" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Service-allTime/app/src/main/res/layout/activity_register.xml" value="0.12364130434782608" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/Service-allTime/app/src/main/res/layout/activity_splash.xml" value="0.1598731884057971" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/Service-allTime/app/src/main/res/layout/fragment_inicio.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Service-allTime/app/src/main/res/layout/fragment_add_service.xml" value="0.12364130434782608" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Service-allTime/app/src/main/res/layout/fragment_inicio.xml" value="0.25" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Service-allTime/app/src/main/res/layout/fragment_perfil.xml" value="0.12364130434782608" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Service-allTime/app/src/main/res/layout/fragment_servicios.xml" value="0.12364130434782608" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/Service-allTime/app/src/main/res/menu/menunavegation.xml" value="0.203125" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/Serviciosalltime/app/src/main/res/layout/activity_splash.xml" value="0.11322463768115942" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/Serviciostime/app/src/main/res/drawable/ic_lock.xml" value="0.1" />
