@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Serviciostime">
         <activity
-            android:name=".FullScreenService"
+            android:name=".ServiceDetails"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
         <activity

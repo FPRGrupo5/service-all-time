@@ -36,21 +36,6 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/eTxt_username_R"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:autofillHints=""
-                android:drawableStart="@drawable/ic_persona"
-                android:drawablePadding="5dp"
-                android:ems="10"
-
-                android:hint="@string/complete_name"
-                android:inputType="textPersonName"
-                android:padding="15dp"
-                android:textColorHint="#757575" />
-
-            <EditText
                 android:id="@+id/eTxt_email_R"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -66,16 +51,19 @@
                 android:textColorHint="#757575" />
 
             <EditText
-                android:id="@+id/eTxt_phone_R"
+                android:id="@+id/eTxt_username_R"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:autofillHints=""
                 android:drawableStart="@drawable/ic_persona"
+                android:drawablePadding="5dp"
                 android:ems="10"
-                android:hint="@string/phone"
-                android:inputType="phone"
-                android:padding="15dp" />
+
+                android:hint="@string/username"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColorHint="#757575" />
 
             <EditText
                 android:id="@+id/eTxt_password_R"

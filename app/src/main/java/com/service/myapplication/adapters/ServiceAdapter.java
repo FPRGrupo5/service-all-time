@@ -12,7 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.service.myapplication.FullScreenService;
+import com.service.myapplication.ServiceDetails;
 import com.service.myapplication.R;
 import com.service.myapplication.models.ServiceModel;
 
@@ -31,7 +31,7 @@ public class ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.ViewHold
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_service, parent, false);
         view.setOnClickListener(view1 -> {
-            Intent intent = new Intent(ctx, FullScreenService.class);
+            Intent intent = new Intent(ctx, ServiceDetails.class);
             ctx.startActivity(intent);
         });
         return new ViewHolder(view);

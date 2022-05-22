@@ -24,11 +24,14 @@
     <string name="create_service">Crear servicio</string>
     <string name="add_image">Agregar imagen</string>
 
+    <string name="des_service_detail">datos referentes del servicio seleccionado</string>
     <string name="des_img_avatar">Imagen de perfil del usuario</string>
     <string name="username">Usuario</string>
     <string name="des_img_service">Imagen de referencia del servicio</string>
     <string name="service_rating">Valoración</string>
     <string name="service_date_publish">Fecha de publicación</string>
+
+    <string name="required">Requerido</string>
 
     <string name="title_fragment_inicio">Inicio</string>
     <string name="title_fragment_services">Servicios</string>
