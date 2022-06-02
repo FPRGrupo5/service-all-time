@@ -6,7 +6,7 @@
     <string name="forget_password">¿Olvidó su contraseña?</string>
     <string name="email">Correo Electrónico</string>
     <string name="password">Contraseña</string>
-    <string name="complete_name">Nombre Completo</string>
+    <string name="full_name">Nombre Completo</string>
     <string name="phone">Teléfono</string>
     <string name="email_sent">Correo enviado</string>
     <string name="auth_failed">Autenticación fallida</string>
@@ -37,4 +37,9 @@
     <string name="title_fragment_services">Servicios</string>
     <string name="title_fragment_profile">Perfil</string>
     <string name="title_fragment_add_service">Agregar Servicio</string>
+
+    <string name="user_profession">Profesión</string>
+    <string name="user_location">Localización</string>
+    <string name="des_map_location">Icono o imagen de un mapa</string>
+    <string name="des_shared_icon">Icono para compartir datos</string>
 </resources>

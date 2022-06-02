@@ -1,11 +1,13 @@
 package com.service.myapplication.models;
 
+import java.util.List;
+
 public class ServiceModel {
     private String uid;
     private String name;
     private String description;
     private String imageUrl;
-    private String category;
+    private List<String> category;
     private String openingHours; //horario de atención
     private String dateCreated;
     private int laborCost; //costo de la mano de obra
@@ -49,11 +51,11 @@ public class ServiceModel {
         this.imageUrl = imageUrl;
     }
 
-    public String getCategory() {
+    public List<String> getCategory() {
         return category;
     }
 
-    public void setCategory(String category) {
+    public void setCategory(List<String> category) {
         this.category = category;
     }
 

@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MotionEvent;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -27,6 +25,7 @@ public class Login extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
 
         initEditTexts();
+        getEmailFromRegister();
         initButtons();
     }
 
@@ -44,6 +43,15 @@ public class Login extends AppCompatActivity {
 
         Button forgetPasswordBtn = findViewById(R.id.btn_forgetPassword_L);
         forgetPasswordBtn.setOnClickListener(view -> onForgetPassword());
+    }
+
+    private void getEmailFromRegister() {
+        String userEmail = getIntent().getStringExtra("emailToLogin");
+        if (userEmail == null) {
+            emailETxt.setText("");
+        } else {
+            emailETxt.setText(userEmail);
+        }
     }
 
     private void go2Register() {

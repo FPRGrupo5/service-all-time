@@ -45,6 +45,7 @@
                 android:drawablePadding="5dp"
                 android:ems="10"
 
+                android:focusable="auto"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 android:padding="15dp"
@@ -60,6 +61,7 @@
                 android:drawablePadding="5dp"
                 android:ems="10"
 
+                android:focusable="auto"
                 android:hint="@string/username"
                 android:inputType="textPersonName"
                 android:padding="15dp"
@@ -75,6 +77,7 @@
                 android:drawablePadding="5dp"
                 android:ems="10"
 
+                android:focusable="auto"
                 android:hint="@string/password"
                 android:inputType="textPassword"
                 android:padding="15dp" />

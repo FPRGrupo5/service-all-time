@@ -13,10 +13,10 @@
         android:layout_gravity="center"
         android:background="@color/gray"
         android:gravity="center"
+        android:text="@string/title_fragment_services"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:drawableStartCompat="@drawable/ic_close_icon"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView_serviceDetail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,21 +25,59 @@
         android:id="@+id/scrollView_serviceDetail"
         android:layout_width="match_parent"
         android:layout_height="692dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
         android:contentDescription="@string/des_service_detail"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_serviceName_SD">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
             <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_service_detail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="@string/des_img_service"
+                android:scaleType="center" />
+
+            <TextView
+                android:id="@+id/txt_service_category"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txt_service_descriptionLabel"
+                android:layout_alignParentStart="true"
+                android:text="@string/service_categories" />
+
+            <TextView
+                android:id="@+id/txt_service_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_service_detail"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:text="@string/service_rating" />
+
+            <TextView
+                android:id="@+id/txt_service_descriptionLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_service_rating"
+                android:text="@string/service_description" />
+
+            <TextView
+                android:id="@+id/txt_service_descriptionContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_service_descriptionLabel"
+                android:shadowColor="@color/black"
+                android:shadowRadius="5" />
+
+        </RelativeLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

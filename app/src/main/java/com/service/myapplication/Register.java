@@ -4,17 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.KeyEvent;
-import android.view.MotionEvent;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.service.myapplication.models.CustomerModel;
+
+import java.util.UUID;
 
 
 public class Register extends AppCompatActivity {
@@ -22,6 +23,8 @@ public class Register extends AppCompatActivity {
     private EditText emailETxt;
     private EditText usernameETxt;
     private EditText passwordETxt;
+    private FirebaseDatabase database;
+    private DatabaseReference reference;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,6 +77,9 @@ public class Register extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             FirebaseUser user = auth.getCurrentUser();
                             sendCheckVerification(user);
+                            String uid = user != null ? user.getUid() : UUID.randomUUID().toString();
+                            String mail = user != null ? user.getEmail() : email;
+                            CustomerModel customer = new CustomerModel(uid, username, mail);
                             go2Login(user != null ? user.getEmail() : email);
                         } else {
                             Snackbar.make(findViewById(R.id.scrollView_Register),
@@ -97,15 +103,16 @@ public class Register extends AppCompatActivity {
     }
 
     private void syncUserTextAndEmail() {
-        emailETxt.setOnKeyListener(new View.OnKeyListener() {
-            @Override
-            public boolean onKey(View view, int i, KeyEvent keyEvent) {
-                if (keyEvent.getAction() == KeyEvent.ACTION_UP) {
-                    String email = emailETxt.getText().toString();
-                    usernameETxt.setText(email.substring(0, email.indexOf("@")));
-                }
-                return true;
+        emailETxt.setOnKeyListener((view, i, keyEvent) -> {
+            if (keyEvent.getAction() == KeyEvent.ACTION_UP) {
+                String email = emailETxt.getText().toString();
+                usernameETxt.setText(email.substring(0, email.indexOf("@")));
             }
+            return true;
         });
+    }
+
+    private void onCreateUserIfNotExistsInFirebase() {
+
     }
 }
