@@ -56,7 +56,7 @@ public class Perfil extends Fragment {
     private FusedLocationProviderClient fusedLocationProviderClient;
     Uri uriCoordinates;
     TextView txtDataLocation;
-
+    TextView txtCoordinates;
     public Perfil() {
         // Required empty public constructor
     }
@@ -97,6 +97,7 @@ public class Perfil extends Fragment {
             fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(getActivity());
         }
         txtDataLocation = view.findViewById(R.id.txt_dataLocation);
+        txtCoordinates = view.findViewById(R.id.txt_coordinate);
         initLocationText(view);
         return view;
     }
@@ -140,6 +141,7 @@ public class Perfil extends Fragment {
 
                         getDataLocation(latitude, longitude);
                         uriCoordinates = Uri.parse("geo:"+latitude+","+longitude);
+                        txtCoordinates.setText("latitud:"+latitude + "\n longitude"+longitude);
                     }
                 });
             } else {
@@ -197,6 +199,7 @@ public class Perfil extends Fragment {
             double longitude = location.getLongitude();
             getDataLocation(latitude, longitude);
             uriCoordinates = Uri.parse("geo:"+latitude+","+longitude);
+            txtCoordinates.setText("latitud:"+latitude + "\n longitude"+longitude);
         }
     };
 
